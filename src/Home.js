@@ -10,7 +10,7 @@ export default function Hello() {
 
   const callAPI = async () => {
     try {
-      const response = await fetch(`http://${IPAdd}:${PORT}/api/hello`);
+      const response = await fetch(`http://${window.location.host.split(":")[0]}/api/hello`);
       const data = await response.json();
      
       if (data.status === 0) {
