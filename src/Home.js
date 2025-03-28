@@ -10,7 +10,7 @@ export default function Hello() {
 
   const callAPI = async () => {
     try {
-      const response = await fetch(`http://backend-one-alpha-72.vercel.app/api/hello`);
+      const response = await fetch(`https://backend-one-alpha-72.vercel.app/api/hello`);
       const data = await response.json();
      
       if (data.status === 0) {
